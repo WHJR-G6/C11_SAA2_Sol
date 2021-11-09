@@ -8,7 +8,7 @@ function preload(){
   platform_image = loadImage("images/p1.png");
   player2_image=loadImage("images/jack2.png")
   platform2_image = loadImage("images/p2.png");
-  stone_image = loadImage("images/p2.png");
+  stone_image = loadImage("images/stone.png");
 
 }
 
@@ -58,23 +58,13 @@ function spawnPlatform(){
 
 
 function spawnStones(){
-
+  if(frameCount % 60 ===0){
 	var stone = createSprite(150,0,50,50);
 
 	stone.velocityY = 4;
 
 	stone.scale = 0.6;
-  stone.addImage(     )
-
+  stone.addImage(stone_image);
+  }
 }
-
-
-
-
-
-
-
-
-
-
 
